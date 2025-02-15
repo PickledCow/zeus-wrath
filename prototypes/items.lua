@@ -30,6 +30,7 @@ local player_excluded_layers = {
 local zeus_ammo = table.deepcopy(data.raw["ammo"]["rocket"])
 zeus_ammo.order = "e[railgun-ammo]-a[basic]-a[zeus]"
 zeus_ammo.name = "zeus-wrath-lightning-ammo"
+zeus_ammo.stack_size = 50
 zeus_ammo.icon = "__zeus-wrath__/graphics/lightning-bottle.png"
 -- zeus_ammo.inventory_move_sound = data.raw["item"]["accumulator"].inventory_move_sound
 -- zeus_ammo.drop_sound = data.raw["item"]["accumulator"].drop_sound
