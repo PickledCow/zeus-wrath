@@ -1,0 +1,39 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 14. 02. 2025
+  Balancing:
+    - Space platform Wube logo no longer requires Wubefill in simple recipe mode and better matches the regular recipe.
+    - Increased the cost of Wube synthesis to use 10 circuits each. The cost for simple recipes is unchanged.
+  Bugfixes:
+    - Fixed incorrect recipe for Wubefill outside of simple mode.
+    - Fixed Wube Processing not requiring Chemical Science Packs to research.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 14. 02. 2025
+  Major Features:
+    - Added mod settings for cheaper research.
+    - Added mod settings for simpler recipes.
+  Balancing:
+    - Wubefill now is crafted in multiples of 9 instead of 10 to better reflect usage.
+    - Research time for Wube Processing reduced from 60 to 30.
+  Bugfixes:
+    - Fixed Wube Processing being available before Lubricant is unlocked.
+  Info:
+    - Added Space Age as an optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 14. 02. 2025
+  Bugfixes:
+    - Fixed Wubefill tile place sound not properly being set.
+  Info:
+    - Added changelog.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 13. 02. 2025
+  Bugfixes:
+    - Fixed crash on load if the Space Age mod was not active.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 13. 02. 2025
+  Major Features:
+    - Initial Release.

@@ -1,0 +1,10 @@
+{
+  "name": "zeus-wrath",
+  "version": "1.0.0",
+  "title": "Zeus' Wrath",
+  "author": "PickledCow",
+  "contact": "factorio@joon.id.au",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0", "space-age >= 1.0.0"],
+  "description": "Channel the power of the sky and summon lightning strikes onto your enemies!"
+}
