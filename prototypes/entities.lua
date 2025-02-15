@@ -72,7 +72,7 @@ local zeus_turret = table.deepcopy(data.raw["electric-turret"]["tesla-turret"])
 zeus_turret.name = "zeus-wrath-zeus-turret"
 zeus_turret.order = "z-b[turret]-f[tesla-turret]-a[zeus-turret]"
 zeus_turret.surface_conditions = {
-    {property = "gravity", min = 0.01}
+    {property = "gravity", min = 1}
 }
 zeus_turret.prepare_range = 60
 zeus_turret.rotation_speed = 0.02
