@@ -1,5 +1,10 @@
 -- items.lua
 
+local force = "not-friend"
+if settings.startup["zeus-wrath-friendly-fire"].value then
+    force = "all"
+end
+
 local player_excluded_layers = {
     is_lower_object = true,
     is_object = true,
@@ -64,6 +69,7 @@ zeus_ammo.ammo_type = {
                             {
                                 type = "area",
                                 radius = 0.5,
+                                force = force,
                                 action_delivery = {
                                     type = "instant",
                                     target_effects = {
@@ -85,6 +91,7 @@ zeus_ammo.ammo_type = {
                             {
                                 type = "area",
                                 radius = 5,
+                                force = force,
                                 action_delivery = {
                                     type = "instant",
                                     target_effects = {

@@ -109,15 +109,22 @@ zeus_turret.icon = "__zeus-wrath__/graphics/zeus-turret.png"
 zeus_turret.collision_box = {{-2.4, -2.4}, {2.4, 2.4}}
 zeus_turret.selection_box = {{-2.5, -2.5}, {2.5, 2.5}}
 zeus_turret.corpse = "zeus-wrath-zeus-turret-remnants"
+zeus_turret.resistances = {
+    { type = "electric", percent = 100 }
+}
+
+zeus_turret.drawing_box_vertical_extension = 3
 
 -- Set graphics to match beacon ones
+
 zeus_turret.graphics_set = {
     base_visualisation = {
         {
-            render_layer = "lower-object",
+            -- render_layer = "lower-object",
+            render_layer = "object",
             animation = {
                 layers = {
-                    -- Base of turret
+                    -- Base of turret, using beacon sprites
                     {
                         layers = {
                             {
@@ -140,13 +147,25 @@ zeus_turret.graphics_set = {
                                     0.390625,
                                     0.015625
                                 }
+                            },
+                            {
+                                draw_as_shadow = true,
+                                filename = "__space-age__/graphics/entity/lightning-collector/lightning-collector-shadow.png",
+                                height = 108,
+                                width = 416,
+                                scale = 0.5,
+                                shift = {
+                                    0.0,
+                                    0.34375
+                                }
                             }
                         },
                         render_layer = "floor-mechanics"
                     },
-                    -- Beacon top
+
+                    -- the Lightning rod
                     {
-                        animation_speed = 1,
+                        -- animation_speed = 1,
                         layers = {
                             {
                                 filename = "__space-age__/graphics/entity/lightning-collector/lightning-collector.png",
@@ -156,37 +175,17 @@ zeus_turret.graphics_set = {
                                 shift = {
                                   0.0,
                                   -2.25
-                                }
+                                },
+                                
                             }
                         },
-                        render_layer = "object"
+                        render_layer = "higher-object-under"
                     }
                 }
             }
         }
     }
 }
-
--- zeus_turret.energy_glow_animation.north = {
---     layers = {
---         {
---             animation_speed = 0.5,
---             blend_mode = "additive",
---             filename = "__base__/graphics/entity/beacon/beacon-light.png",
---             frame_count = 45,
---             height = 186,
---             line_length = 9,
---             scale = 1,
---             shift = {
---                 0.015625,
---                 -0.5625
---             },
---             width = 110,
---             apply_tint = true,
---             render_layer = "object"
---         }
---     }
--- }
 
 -- Remove unnecessary animations
 zeus_turret.preparing_animation = nil
