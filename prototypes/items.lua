@@ -1,7 +1,7 @@
 -- items.lua
 
 local force = "not-friend"
-if settings.startup["zeus-wrath-friendly-fire"].value then
+if settings.startup["zeus-wrath-friendly-fire"].value or settings.startup["zeus-wrath-friendly-fire-gun"].value then
     force = "all"
 end
 

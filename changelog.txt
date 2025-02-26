@@ -1,12 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 26. 02. 2025
+  Minor Features:
+    - Added a toggle for forced friendly fire for Zeus blaster even if turret friendly fire is off. Enabled by default.
+  Graphics:
+    - Changed the graphics of the turret to use unused beta sprites from FFF339.
+  Info:
+    - Changed description of Zeus turret to remove disclaimer of friendly fire.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 17. 02. 2025
+  Bugfixes:
+    - Fixed Zeus Turret dropping regular Tesla turret on pickup. 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 17. 02. 2025
   Minor Features:
     - Added a toggle for enabling/disabling friendly fire. Disabled by default.
   Bugfixes:
     - Fixed render layer of the lightning pole on the turret.
-  Info:
-    - Added "Space Age Required" to the info.json file.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 16. 02. 2025
